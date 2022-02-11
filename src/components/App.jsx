@@ -55,7 +55,7 @@ class App extends Component {
         <h2 className={s.title}>Phonebook</h2>
         <ContactForm onSubmit={this.addContacts} />
         <h3 className={s.title}>Contacts</h3>
-        <Filter value={filter} onChange={this.changeFilter} />
+        <Filter filter={filter} onChange={this.changeFilter} />
         <ContactList
           contacts={visibleContact}
           onDeleteContact={this.deleteContact}
@@ -65,21 +65,8 @@ class App extends Component {
   }
 }
 
+// App.propTypes = {
+//   contacts: PropTypes.
+// }
+
 export default App;
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         textTransform: 'uppercase',
-//         color: '#010101',
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
