@@ -51,7 +51,7 @@ class App extends Component {
     const { filter } = this.state;
     const visibleContact = this.getVisibleContact();
     return (
-      <>
+      <div>
         <h2 className={s.title}>Phonebook</h2>
         <ContactForm onSubmit={this.addContacts} />
         <h3 className={s.title}>Contacts</h3>
@@ -60,7 +60,7 @@ class App extends Component {
           contacts={visibleContact}
           onDeleteContact={this.deleteContact}
         />
-      </>
+      </div>
     );
   }
 }
