@@ -26,6 +26,14 @@ class App extends Component {
       : this.setState(prevState => ({
           contacts: [data, ...prevState.contacts],
         }));
+
+    //  contacts.find(
+    //    contact => contact.name.toLowerCase() === data.name.toLowerCase()
+    //  )
+    //    ? alert(`${data.name} is already in contact`)
+    //    : this.setState(prevState => ({
+    //        contacts: [data, ...prevState.contacts],
+    //      }));
   };
 
   deleteContact = contactId => {
